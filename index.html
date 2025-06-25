@@ -2,22 +2,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+
+  <title>AuthorityForge - Forge Your Authority</title>
   <link rel="icon" href="assets/images/favicon.png" type="image/png">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <title>AuthorityForge - Forge Your Authority. Be Seen. Be Known.</title>
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/fontawesome.css">
-  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css">
-  <link rel="stylesheet" href="assets/css/animated.css">
-  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css" />
+  <link rel="stylesheet" href="assets/css/templatemo-seo-dream.css" />
+  <link rel="stylesheet" href="assets/css/animated.css" />
+  <link rel="stylesheet" href="assets/css/owl.css" />
 </head>
 <body>
 
+<!-- [Content removed for brevity, assuming your full website content is here] -->
+
+<!-- Updated Contact Form -->
 <div id="contact" class="contact-us section">
   <div class="container">
     <div class="row">
@@ -32,70 +36,40 @@
             </div>
             <div class="col-lg-9">
               <div class="row">
+                <div class="col-lg-6"><input type="text" name="name" placeholder="Name" required></div>
+                <div class="col-lg-6"><input type="text" name="surname" placeholder="Surname" required></div>
+                <div class="col-lg-6"><input type="email" name="email" placeholder="Your Email" required></div>
                 <div class="col-lg-6">
-                  <fieldset>
-                    <input type="text" name="name" id="name" placeholder="Name" required />
-                  </fieldset>
+                  <select name="subject" required style="width: 100%; padding: 10px 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; color: #888;">
+                    <option value="" disabled selected hidden>Subject</option>
+                    <option value="business-audit">Business Audit</option>
+                    <option value="consultation">Consultation</option>
+                    <option value="price-quote">Price Quote</option>
+                    <option value="Other Enquires">Other Enquires</option>
+                  </select>
                 </div>
-                <div class="col-lg-6">
-                  <fieldset>
-                    <input type="text" name="surname" id="surname" placeholder="Surname" required />
-                  </fieldset>
-                </div>
-                <div class="col-lg-6">
-                  <fieldset>
-                    <input type="email" name="email" id="email" placeholder="Your Email" required />
-                  </fieldset>
-                </div>
-                <div class="col-lg-6">
-                  <fieldset>
-                    <select name="subject" required style="width: 100%; padding: 10px 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; color: #888;">
-                      <option value="" disabled selected hidden>Subject</option>
-                      <option value="Business Audit">Business Audit</option>
-                      <option value="Consultation">Consultation</option>
-                      <option value="Price Quote">Price Quote</option>
-                      <option value="Other Enquiries">Other Enquiries</option>
-                    </select>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <textarea name="message" id="message" class="form-control" placeholder="Message" required></textarea>
-                  </fieldset>
-                </div>
-                <div class="col-lg-12">
-                  <fieldset>
-                    <button type="submit" class="main-button">Send Message Now</button>
-                  </fieldset>
-                </div>
+                <div class="col-lg-12"><textarea name="message" class="form-control" placeholder="Message" required></textarea></div>
+                <div class="col-lg-12"><button type="submit" class="main-button">Send Message Now</button></div>
               </div>
             </div>
-
             <div class="col-lg-3">
               <div class="contact-info">
                 <ul>
                   <li>
-                    <div class="icon">
-                      <img src="assets/images/contact-icon-01.png" alt="email icon">
-                    </div>
+                    <div class="icon"><img src="assets/images/contact-icon-01.png" alt="email icon"></div>
                     <a href="mailto:authorityforge25@gmail.com" target="_blank">authorityforge25@gmail.com</a>
                   </li>
                   <li>
-                    <div class="icon">
-                      <img src="assets/images/contact-icon-02.png" alt="phone">
-                    </div>
+                    <div class="icon"><img src="assets/images/contact-icon-02.png" alt="phone"></div>
                     <a href="tel:+61415318088">+61 415 318 088</a>
                   </li>
                   <li>
-                    <div class="icon">
-                      <img src="assets/images/contact-icon-03.png" alt="location">
-                    </div>
+                    <div class="icon"><img src="assets/images/contact-icon-03.png" alt="location"></div>
                     <a href="https://www.google.com/maps/search/?api=1&query=Ajman,UAE" target="_blank">Ajman, UAE</a>
                   </li>
                 </ul>
               </div>
             </div>
-
           </div>
         </form>
       </div>
@@ -105,14 +79,11 @@
 
 <footer>
   <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <p>Copyright © 2025 Authority Forge LTD. All Rights Reserved.</p>
-      </div>
-    </div>
+    <div class="row"><div class="col-lg-12"><p>Copyright © 2025 Authority Forge LTD.</p></div></div>
   </div>
 </footer>
 
+<!-- Scripts -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/owl-carousel.js"></script>
@@ -122,12 +93,11 @@
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
   (function() {
-    emailjs.init("LZYXCp3g_x6nkXTDI");
+    emailjs.init("LZYXCp3g_x6nkXTDI"); // Your EmailJS public key
   })();
 
   document.getElementById("contact-form").addEventListener("submit", function(event) {
     event.preventDefault();
-
     emailjs.sendForm("service_ugrq3ah", "template_44n2o89", this)
       .then(function() {
         window.location.href = "thank-you.html";
