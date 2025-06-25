@@ -557,6 +557,23 @@ We specialize in SEO, email marketing, and paid social media advertising — all
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+<!-- EmailJS Integration -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("LZYXCp3g_x6nkXTDI"); // your public key
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    emailjs.sendForm("service_ugrq3ah","template_44n2o89", this)
+      .then(function(){
+        window.location.href = "thank-you.html";
+      }, function(error){
+        alert("Oops! Something went wrong...\n" + JSON.stringify(error));
+      });
+  });
+</script>
 
 </body>
 </html>
