@@ -452,79 +452,17 @@ We specialize in SEO, email marketing, and paid social media advertising — all
     <div class="container">
       <div class="row">
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
-         <form id="contact" action="https://formspree.io/f/xvgrvpld" method="POST">
-  <div class="row">
-    <div class="col-lg-6 offset-lg-3">
-      <div class="section-heading">
-        <h6>Contact Us</h6>
-        <h2>Fill Out The Form Below To <span>Get</span> In <em>Touch</em> With Us</h2>
-      </div>
-    </div>
-    <div class="col-lg-9">
-      <div class="row">
-        <div class="col-lg-6">
-          <fieldset>
-            <input type="text" name="name" id="name" placeholder="Name" autocomplete="on" required>
-          </fieldset>
-        </div>
-        <div class="col-lg-6">
-          <fieldset>
-            <input type="text" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
-          </fieldset>
-        </div>
-        <div class="col-lg-6">
-          <fieldset>
-            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
-          </fieldset>
-        </div>
-        <div class="col-lg-6">
-          <fieldset>
-            <select id="subject" name="subject" required style="width: 100%; padding: 10px 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; color: #888;">
-              <option value="" disabled selected hidden>Subject</option>
-              <option value="business-audit">Business Audit</option>
-              <option value="consultation">Consultation</option>
-              <option value="price-quote">Price Quote</option>
-              <option value="other-enquiries">Other Enquiries</option>
-            </select>
-          </fieldset>
-        </div>
-        <div class="col-lg-12">
-          <fieldset>
-            <textarea name="message" class="form-control" id="message" placeholder="Message" required></textarea>
-          </fieldset>
-        </div>
-        <div class="col-lg-12">
-          <fieldset>
-            <button type="submit" id="form-submit" class="main-button">Send Message Now</button>
-          </fieldset>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="contact-info">
-        <ul>
-          <li>
-            <div class="icon">
-              <img src="assets/images/contact-icon-01.png" alt="email icon">
-            </div>
-            <a href="mailto:authorityforge25@gmail.com" target="_blank">authorityforge25@gmail.com</a>
-          </li>
-          <li>
-            <div class="icon">
-              <img src="assets/images/contact-icon-02.png" alt="phone">
-            </div>
-            <a href="tel:+61415318088">+61 415 318 088</a>
-          </li>
-          <li>
-            <div class="icon">
-              <img src="assets/images/contact-icon-03.png" alt="location">
-            </div>
-            <a href="https://www.google.com/maps/search/?api=1&query=Ajman,UAE" target="_blank">Ajman, UAE</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
+       <form action="https://formsubmit.io/send/authorityforge25@gmail.com" method="POST">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  
+  <!-- Hidden input to detect origin -->
+  <input type="hidden" name="_subject" value="New Contact Form Submission">
+  <input type="hidden" name="_redirect" value="https://authorityforgeuae.com/thank-you.html">
+  <input type="hidden" name="_formsubmit_id" value="">
+  
+  <button type="submit">Send</button>
 </form>
 
 
