@@ -453,12 +453,7 @@ We specialize in SEO, email marketing, and paid social media advertising — all
       <div class="row">
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
      ####FORM FROM HERE##
-          <form id="contact" action="https://formsubmit.io/send/authorityforge25@gmail.com" method="POST">
-  <!-- Hidden tracking + redirect -->
-  <input type="hidden" name="_subject" value="New Contact From AuthorityForgeUAE">
-  <input type="hidden" name="_redirect" value="https://authorityforgeuae.com/thank-you.html">
-  <input type="hidden" name="_formsubmit_id" value="">
-
+         <form id="contact-form">
   <div class="row">
     <div class="col-lg-6 offset-lg-3">
       <div class="section-heading">
@@ -470,64 +465,40 @@ We specialize in SEO, email marketing, and paid social media advertising — all
       <div class="row">
         <div class="col-lg-6">
           <fieldset>
-            <input type="text" name="name" id="name" placeholder="Name" autocomplete="on" required>
+            <input type="text" name="name" id="name" placeholder="Name" required />
           </fieldset>
         </div>
         <div class="col-lg-6">
           <fieldset>
-            <input type="text" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+            <input type="text" name="surname" id="surname" placeholder="Surname" required />
           </fieldset>
         </div>
         <div class="col-lg-6">
           <fieldset>
-            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
+            <input type="email" name="email" id="email" placeholder="Your Email" required />
           </fieldset>
         </div>
         <div class="col-lg-6">
           <fieldset>
-            <select id="subject" name="subject" required style="width: 100%; padding: 10px 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; color: #888;">
+            <select name="subject" required style="width: 100%; padding: 10px 15px; border: 1px solid #ccc; border-radius: 5px; font-size: 14px; color: #888;">
               <option value="" disabled selected hidden>Subject</option>
-              <option value="business-audit">Business Audit</option>
-              <option value="consultation">Consultation</option>
-              <option value="price-quote">Price Quote</option>
-              <option value="other-enquiries">Other Enquiries</option>
+              <option value="Business Audit">Business Audit</option>
+              <option value="Consultation">Consultation</option>
+              <option value="Price Quote">Price Quote</option>
+              <option value="Other Enquiries">Other Enquiries</option>
             </select>
           </fieldset>
         </div>
         <div class="col-lg-12">
           <fieldset>
-            <textarea name="message" class="form-control" id="message" placeholder="Message" required></textarea>
+            <textarea name="message" id="message" class="form-control" placeholder="Message" required></textarea>
           </fieldset>
         </div>
         <div class="col-lg-12">
           <fieldset>
-            <button type="submit" id="form-submit" class="main-button">Send Message Now</button>
+            <button type="submit" class="main-button">Send Message Now</button>
           </fieldset>
         </div>
-      </div>
-    </div>
-    <div class="col-lg-3">
-      <div class="contact-info">
-        <ul>
-          <li>
-            <div class="icon">
-              <img src="assets/images/contact-icon-01.png" alt="email icon">
-            </div>
-            <a href="mailto:authorityforge25@gmail.com" target="_blank">authorityforge25@gmail.com</a>
-          </li>
-          <li>
-            <div class="icon">
-              <img src="assets/images/contact-icon-02.png" alt="phone">
-            </div>
-            <a href="tel:+61415318088">+61 415 318 088</a>
-          </li>
-          <li>
-            <div class="icon">
-              <img src="assets/images/contact-icon-03.png" alt="location">
-            </div>
-            <a href="https://www.google.com/maps/search/?api=1&query=Ajman,UAE" target="_blank">Ajman, UAE</a>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
@@ -558,6 +529,24 @@ We specialize in SEO, email marketing, and paid social media advertising — all
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/custom.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init("LZYXCp3g_x6nkXTDI");
+  })();
+
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm("service_ugrq3ah", "template_44n2o89", this)
+      .then(function() {
+        window.location.href = "thank-you.html";
+      }, function(error) {
+        alert("Oops! Something went wrong...\n" + JSON.stringify(error));
+      });
+  });
+</script>
+
 
 </body>
 </html>
