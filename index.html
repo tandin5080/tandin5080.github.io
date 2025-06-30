@@ -24,9 +24,11 @@
       flex-direction: column;
       text-align: center;
       background-image: url("cover.png");
-      background-size: cover;
-      background-position: center;
+      background-size: contain;
       background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+
       position: relative;
     }
 
@@ -65,6 +67,21 @@
       h1 { font-size: 2rem; }
       p { font-size: 1rem; padding: 0 10px; }
     }
+    @media (max-width: 768px) {
+  body {
+    background-size: 100% auto;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+}
+
   </style>
 </head>
 <body>
